@@ -1,0 +1,52 @@
+.quickcount {
+    .wrap-detikx {
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+    .mulai {
+        // border: 1px solid;
+        // box-shadow: 2px 3px 4px #ececec;
+        filter: drop-shadow(2px 4px 6px rgba(0,0,0,.3));
+        
+        .blocking {
+            padding: 8px;
+            display: block;
+            .img {
+                width: 120px;
+                height: 120px;
+                display: inline-block;
+                vertical-align: middle;
+                @media screen and (max-width:768px) {
+                    width: 80px;
+                    height: 80px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .content {
+                display: inline-block;
+                width: 65%;
+                vertical-align: middle;
+                margin-left: 8px;
+            }
+        }
+        .color {
+            &--one {
+                background: #a7dad1;
+            }
+            &--two {
+                background: #ee605f;
+            }
+            &--three {
+                background: #e7bc8f;
+            }
+            &--four {
+                background: #febe3a;
+            }
+        }
+    }
+}

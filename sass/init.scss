@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Alfa+Slab+One&family=Outfit:wght@400;700&family=Prompt:wght@400;700&display=swap');
+
+section {
+    padding: 32px 0;
+    // background: $red;
+    min-height: 100vh;
+    z-index: 11;
+    // background: #eee;
+    background: #e0c9a0;
+    position: relative;
+
+    .bg-block {
+        background: white;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    .text-center {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+    p,li {
+        font-size: 1rem;
+        @media screen and (max-width:400px) {
+            font-size: .9rem;
+        }
+    }
+    // @media screen and (min-width:1600px) {
+    //     width: 1440px;
+    //     margin: 0 auto;
+    // }
+}
+
+.slick {
+    &-next, &-prev {
+        z-index: 17 !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(#ce9352,.8);
+        &:focus, &:hover {
+            background: rgba(#ce9352,.5);
+        }
+        &::before {
+            font-family: 'fontAwesome' !important;
+            font-size: 32px !important;
+            color: #fff !important;
+            font-weight: 700 !important;
+            @media screen and (max-width:766px) {
+                font-size: 32px !important;
+            }
+        }
+    }
+    &-prev {
+        left: -16px !important;
+        @media screen and (max-width:768px) {
+            left: -16px !important;
+        }
+        &::before {
+            content:"\f104" !important;
+        }
+    }
+    &-next {
+        right: -16px !important;
+        @media screen and (max-width:768px) {
+            right: -16px !important;
+        }
+        &::before {
+            content:"\f105" !important;
+        }
+    }
+}
+
+
+
+.sticky-mode {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+}
+
+.wrap-detikx {
+    width: 700px;
+    position: relative;
+    margin: 0 auto;
+    @media screen and (max-width:766px) {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    // font-size: 1.2rem;
+    // line-height: 1.6rem;
+   
+}
+
+.totop {
+    position: relative;
+    z-index: 19;
+}
+
+.firstletter {
+    &::first-letter {
+        float: left;
+        font-weight: bold;
+        margin-right: 8px;
+        font-size: 60px;
+        font-size: 6rem;
+        line-height: 40px;
+        line-height: 4rem;
+        height: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+main {
+    overflow-x: clip;
+}
+html,
+body {
+position: relative;
+height: 100%;
+// font-family: 'Outfit';
+// overflow-x: hidden;
+font-family: 'Poppins';
+@media screen and (max-width:768px) {
+    // overflow-x: hidden;
+}
+h2, h3 {
+    // font-family: 'Outfit';
+    font-weight: 700;
+    font-family: 'Prompt';
+}
+}
+
+ /* the slides */
+ .slick-slide {
+    margin: 0 8px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -8px;
+}
