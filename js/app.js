@@ -1,24 +1,34 @@
 var options = {
     series: [
         {
-            name: 'Q1 Budget',
+            name: 'LSI Denny JA',
             group: 'budget',
-            data: [44000, 55000, 41000, 67000, 22000]
+            data: [52, 20, 28]
         },
         {
-            name: 'Q1 Actual',
+            name: 'Charta Politika',
             group: 'actual',
-            data: [48000, 50000, 40000, 65000, 25000]
+            data: [52, 28, 20]
         },
         {
-            name: 'Q2 Budget',
+            name: 'Poltracking',
             group: 'budget',
-            data: [13000, 36000, 20000, 8000, 13000]
+            data: [50, 20, 30]
         },
         {
-            name: 'Q2 Actual',
+            name: 'PRC',
             group: 'actual',
-            data: [20000, 40000, 25000, 10000, 12000]
+            data: [45, 30, 25]
+        },
+        {
+            name: 'SMRC',
+            group: 'actual',
+            data: [45, 25, 30]
+        },
+        {
+            name: 'Litbang Kompas',
+            group: 'actual',
+            data: [45, 25, 30]
         }
     ],
     chart: {
@@ -32,7 +42,8 @@ var options = {
     },
     dataLabels: {
         formatter: (val) => {
-            return val / 1000 + 'K'
+            // return val / 100 + '%'
+            return val + '%'
         }
     },
     plotOptions: {
@@ -42,15 +53,15 @@ var options = {
     },
     xaxis: {
         categories: [
-            'Online advertising',
-            'Sales Training',
-            'Print advertising',
-            'Catalogs',
-            'Meetings'
+            'Anies - Muhaimin',
+            'Prabowo - Gibran',
+            'Ganjar - Mahfud',
+            
         ],
         labels: {
             formatter: (val) => {
-                return val / 1000 + 'K'
+                // return val / 1000 + 'K'
+                return val + '%'
             }
         }
     },
