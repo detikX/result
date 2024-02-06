@@ -18,10 +18,11 @@
         }
         .nama {
             // display: inline-block;
-            font-size: 1.3rem;
+            font-size: 1rem;
             background: white;
             width: fit-content;
-            padding: 4px;
+            padding: 4px 8px;
+            border-radius: 4px;
             font-weight: 700;
             @media screen and (max-width:768px) {
                 font-size: .9rem;
