@@ -3,22 +3,22 @@ var options = {
         {
             name: 'LSI Denny JA',
             group: 'budget',
-            data: [52, 20, 28]
+            data: [42, 20, 28]
         },
         {
             name: 'Charta Politika',
             group: 'actual',
-            data: [52, 28, 20]
+            data: [42, 28, 20]
         },
         {
             name: 'Poltracking',
             group: 'budget',
-            data: [50, 20, 30]
+            data: [40, 20, 30]
         },
         {
             name: 'PRC',
             group: 'actual',
-            data: [45, 30, 25]
+            data: [44, 30, 24]
         },
         {
             name: 'SMRC',
@@ -56,7 +56,7 @@ var options = {
             'Anies - Muhaimin',
             'Prabowo - Gibran',
             'Ganjar - Mahfud',
-            
+
         ],
         labels: {
             formatter: (val) => {
