@@ -41,7 +41,7 @@
             vertical-align: top;
             // border: 2px solid;
             position: relative;
-            @media screen and (max-width:360px) {
+            @media screen and (max-width:768px) {
                 width: 23% !important;
             }
             &::before {
