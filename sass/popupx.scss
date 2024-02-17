@@ -225,7 +225,7 @@
         overflow-y: auto;
         position:relative;
         @media screen and (max-width:768px) {
-            padding: 16px 16px 16px;
+            padding: 70px 16px 16px;
         }
         h2 {
           font-size:25px;
@@ -621,12 +621,12 @@
   }
 
   #closex {
-    position: sticky;
+    position: absolute;
     right: 16px;
     width: fit-content;
     cursor: pointer;
     top: 0px;
-    height: 80px;
+    // height: 80px;
     background: #009bd5;
     color: white;
     padding: 8px;
