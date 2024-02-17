@@ -2,6 +2,27 @@
     // min-height: auto;
     // min-height: 80vh;
     background: #e5e5e5;
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%,-50%);
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+        h2 {
+            font-family: 'Protest Riot', sans-serif;
+            color: black;
+            font-size: 4rem;
+            line-height: 3.6rem;
+            text-align: center;
+            text-shadow: 5px 5px white;
+            @media screen and (max-width:768px) {
+                font-size: 2.8rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
     .bg {
         position: absolute;
         inset: 0;
