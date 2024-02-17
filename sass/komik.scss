@@ -1,4 +1,17 @@
 .komik {
+    background: #f6e34e;
+    .judul {
+        margin: 0 auto 24px;
+        width: fit-content;
+        border: 3px solid black;
+        text-align: center;
+        padding: 8px 16px;
+        background: white;
+        h3 {
+            
+            color: #e45a25;
+        }
+    }
     .gallery {
         display: flex;
         padding: 2px;
@@ -45,6 +58,7 @@
             display: block;
             width: 100%;
             transition: .3s;
+            border: 3px solid black;
             &:hover {
                 transform: scale(1.1);
             }
