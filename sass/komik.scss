@@ -8,8 +8,8 @@
         padding: 8px 16px;
         background: white;
         h3 {
-            
-            color: #e45a25;
+            color: black;
+            // color: #e45a25;
         }
     }
     .gallery {
@@ -32,6 +32,7 @@
         &__link {
             margin: 2px;
             overflow: hidden;
+            border: 3px solid black;
             &:hover {
                 .gallery__image {
                     filter: grayscale(0);
@@ -58,9 +59,10 @@
             display: block;
             width: 100%;
             transition: .3s;
-            border: 3px solid black;
+            
             &:hover {
                 transform: scale(1.1);
+                // border: 3px solid black;
             }
         }
         &__caption {
