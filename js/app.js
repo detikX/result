@@ -82,6 +82,7 @@
 $('.gallery__link').click(function () {
     var buttonId = $(this).attr('id');
     $('#modal-container').removeAttr('class').addClass(buttonId);
+    $(".dalang").append()
     $('body').addClass('modal-active');
 })
 
@@ -105,17 +106,55 @@ $.ajax({
         var persenPrab = prabowo / totalx * 100;
         var persenGanj = ganjar / totalx * 100;
         var tgl = response.ts;
-        // Object.values(obj)[0]; 
-        // console.log(persenAnies)
+        // 2024-02-17 19:30:11
+
+        var shortDate = new Date(tgl)
+        var sliceDate = tgl.slice(11, 19)
+        console.log(sliceDate);
+        var senin = shortDate.getDay();
+        var getHari = shortDate.getDate();
+        var getBulan = shortDate.getMonth() + 1;
+        var getTahun = shortDate.getFullYear();
+
+        var monthWording = {
+            '1': 'Januari',
+            '2': 'Februari',
+            '3': 'Maret',
+            '4': 'April',
+            '5': 'Mei',
+            '6': 'Juni',
+            '7': 'Juli',
+            '8': 'Agustus',
+            '9': 'September',
+            '10': 'Oktober',
+            '11': 'November',
+            '12': 'Desember',
+        }
+
+        var hariWording = {
+            '1': 'Senin',
+            '2': 'Selasa',
+            '3': 'Rabu',
+            '4': 'Kamis',
+            '5': 'Jumat',
+            '6': 'Sabtu',
+            '0': 'Minggu'
+        }
+
+
+
         $(".realcount").append(
             `   
-                <div class="text-center">
+                <div class="text-center datasx">
                     <div class="capres">Anies-Muhaimin = <b>${persenAnies.toFixed(2)}%</b></div>
                     <div class="capres">Prabowo-Gibran = <b>${persenPrab.toFixed(2)}%</b></div>
                     <div class="capres">Ganjar-Mahfud = <b>${persenGanj.toFixed(2)}%</b></div>
                 </div>
                 <br>
-                <div class="text-center">Update terakhir: ${tgl}</div>
+                <div class="text-center smalles">
+                    <div class="tanggalx">Update terakhir: <b>${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}</b></div>
+                    <div class="jamx">Jam: <b>${sliceDate} WIB</b></div>
+                </div>
 
             `
         )
