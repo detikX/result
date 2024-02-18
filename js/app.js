@@ -89,3 +89,35 @@ $('#closex').click(function () {
     $(this).parent().parent().parent().addClass('out');
     $('body').removeClass('modal-active');
 });
+
+
+//si rekap
+$.ajax({
+    url: 'https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp.json',
+    method: 'GET',
+    success: function (response) {
+        var chart = response.chart;
+        var anies = Object.values(chart)[0];
+        var prabowo = Object.values(chart)[1];
+        var ganjar = Object.values(chart)[2];
+        var totalx = anies + prabowo + ganjar;
+        var persenAnies = anies / totalx * 100;
+        var persenPrab = prabowo / totalx * 100;
+        var persenGanj = ganjar / totalx * 100;
+        var tgl = response.ts;
+        // Object.values(obj)[0]; 
+        // console.log(persenAnies)
+        $(".realcount").append(
+            `   
+                <div class="text-center">
+                    <div class="capres">Anies-Muhaimin = <b>${persenAnies.toFixed(2)}%</b></div>
+                    <div class="capres">Prabowo-Gibran = <b>${persenPrab.toFixed(2)}%</b></div>
+                    <div class="capres">Ganjar-Mahfud = <b>${persenGanj.toFixed(2)}%</b></div>
+                </div>
+                <br>
+                <div class="text-center">Update terakhir: ${tgl}</div>
+
+            `
+        )
+    }
+})
