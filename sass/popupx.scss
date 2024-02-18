@@ -211,7 +211,7 @@
     .modal-background {
     //   display:table-cell;
       background:rgba(0,0,0,.8);
-      text-align:center;
+      // text-align:center;
       vertical-align:middle;
       width: 100%;
       height: 100%;
@@ -233,8 +233,8 @@
           margin-bottom:15px;
         }
         p {
-          font-size:18px;
-          line-height:22px;
+          font-size:1.1rem;
+          // line-height:22px;
         }
         .modal-svg {
           position:absolute;
@@ -622,7 +622,10 @@
 
   #closex {
     position: absolute;
-    right: 16px;
+    right: 20%;
+    @media screen and (max-width:768px) {
+      right: 16px;
+    }
     width: fit-content;
     cursor: pointer;
     top: 8px;
@@ -630,5 +633,18 @@
     background: #ccc;
     color: black;
     padding: 4px;
+    font-weight: bold;
+    font-size: 16px;
     border-radius: 8px;
+  }
+
+  .images {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
