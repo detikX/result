@@ -234,6 +234,9 @@
         }
         p {
           font-size:1.1rem;
+          @media screen and (max-width:768px) {
+            font-size: .9rem;
+          }
           // line-height:22px;
         }
         .modal-svg {
