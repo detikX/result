@@ -60,7 +60,7 @@
           top: -24px;
           left: 0;
           right: 0;
-          width: 100%;
+          width: 120%;
           border-top: 3px solid;
           height: 80px;
           background: #04a6b7;
@@ -311,7 +311,7 @@
         border-radius:3px;
         font-weight:300;
         overflow: initial;
-        overflow-y: auto;
+        overflow-y: clip;
         position:relative;
         @media screen and (max-width:768px) {
           background:linear-gradient(to top, #04a6b7 5%, white 5%);
