@@ -311,10 +311,12 @@
         border-radius:3px;
         font-weight:300;
         overflow: initial;
-        overflow-y: clip;
+        overflow-y: auto;
         position:relative;
+        
         @media screen and (max-width:768px) {
           background:linear-gradient(to top, #04a6b7 5%, white 5%);
+          overflow-x: clip;
         }
 
         .nama-paslon {
@@ -732,7 +734,7 @@
 
   #closex {
     position: absolute;
-    right: 20%;
+    left: 20%;
     @media screen and (max-width:768px) {
       left: 16px;
       font-size: 12px;
@@ -745,7 +747,7 @@
     color: black;
     padding: 4px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 8px;
   }
 
