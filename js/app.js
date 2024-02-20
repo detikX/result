@@ -110,7 +110,7 @@ $.ajax({
 
         var shortDate = new Date(tgl)
         var sliceDate = tgl.slice(11, 19)
-        console.log(sliceDate);
+        // console.log(sliceDate);
         var senin = shortDate.getDay();
         var getHari = shortDate.getDate();
         var getBulan = shortDate.getMonth() + 1;
@@ -160,3 +160,59 @@ $.ajax({
         )
     }
 })
+
+// $.ajax({
+//     url: 'https://caleg.zakiego.com/api/dpr-ri/dapil/3101',
+//     method: 'GET',
+//     success: function (responsex) {
+//         console.log(responsex)
+//         var a;
+
+//         for (a = 0; a < responsex.data.length; a++) {
+//             // console.log(a);
+//             var nama = responsex.data[a].nama;
+//             var partai = responsex.data[a].namaPartai;
+//             var agama = responsex.data[a].agama;
+//             var hukum = responsex.data[a].usia;
+
+
+//             // console.log(nama)
+//             $('#myTable').append(`
+//                 <tbody>
+//                     <tr>
+//                         <td>${nama}</td>
+//                         <td>${partai}</td>
+//                         <td>${agama}</td>
+//                         <td>${hukum}</td>
+
+
+//                     </tr>
+//                 </tbody>
+//             `)
+//         }
+
+//     }
+// })
+
+$('#myTable').DataTable({
+    responsive: true,
+    ajax: {
+        url: 'https://caleg.zakiego.com/api/dpr-ri/dapil/3101',
+        dataSrc: 'data',
+        // success: function (responsex) {
+        //     console.log(responsex)
+        // }
+    },
+    columns: [
+        { data: 'nama' },
+        // { data: 'pekerjaan' },
+        { data: 'namaPartai' },
+        { data: 'usia' },
+        // { data: 'agama' },
+        // { data: 'pekerjaan' },
+    ]
+});
+
+$(document).ready(function () {
+    // $('#myTable').DataTable();
+});
