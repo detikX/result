@@ -195,7 +195,7 @@ $.ajax({
 // })
 
 $('#myTable').DataTable({
-    responsive: true,
+    // responsive: true,
     ajax: {
         url: 'https://caleg.zakiego.com/api/dpr-ri/dapil/3101',
         dataSrc: 'data',
