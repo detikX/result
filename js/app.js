@@ -155,8 +155,8 @@ $.ajax({
                 </div>
                 <br>
                 <div class="text-center smalles">
-                    <div class="lala">Progress: <b>${progressnilai.toFixed(2)}%</b></div>
-                    <div class="tanggalx">Update terakhir: <b>${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}</b></div>
+                    <div class="lala">Suara masuk: <b>${progressnilai.toFixed(2)}%</b></div>
+                    <div class="tanggalx"><i>Update</i> terakhir: <b>${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}</b></div>
                     <div class="jamx">Jam: <b>${sliceDate} WIB</b></div>
                 </div>
 
