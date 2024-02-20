@@ -194,24 +194,24 @@ $.ajax({
 //     }
 // })
 
-$('#myTable').DataTable({
-    // responsive: true,
-    ajax: {
-        url: 'https://caleg.zakiego.com/api/dpr-ri/dapil/3101',
-        dataSrc: 'data',
-        // success: function (responsex) {
-        //     console.log(responsex)
-        // }
-    },
-    columns: [
-        { data: 'nama' },
-        // { data: 'pekerjaan' },
-        { data: 'namaPartai' },
-        { data: 'usia' },
-        // { data: 'agama' },
-        // { data: 'pekerjaan' },
-    ]
-});
+// $('#myTable').DataTable({
+//     // responsive: true,
+//     ajax: {
+//         url: 'https://caleg.zakiego.com/api/dpr-ri/dapil/3101',
+//         dataSrc: 'data',
+//         // success: function (responsex) {
+//         //     console.log(responsex)
+//         // }
+//     },
+//     columns: [
+//         { data: 'nama' },
+//         // { data: 'pekerjaan' },
+//         { data: 'namaPartai' },
+//         { data: 'usia' },
+//         // { data: 'agama' },
+//         // { data: 'pekerjaan' },
+//     ]
+// });
 
 $(document).ready(function () {
     // $('#myTable').DataTable();
