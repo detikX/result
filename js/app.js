@@ -106,6 +106,9 @@ $.ajax({
         var persenPrab = prabowo / totalx * 100;
         var persenGanj = ganjar / totalx * 100;
         var tgl = response.ts;
+        var progress = response.progres.progres;
+        var progresstotal = response.progres.total;
+        var progressnilai = progress / progresstotal * 100;
         // 2024-02-17 19:30:11
 
         var shortDate = new Date(tgl)
@@ -152,6 +155,7 @@ $.ajax({
                 </div>
                 <br>
                 <div class="text-center smalles">
+                    <div class="lala">Progress: <b>${progressnilai.toFixed(2)}%</b></div>
                     <div class="tanggalx">Update terakhir: <b>${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}</b></div>
                     <div class="jamx">Jam: <b>${sliceDate} WIB</b></div>
                 </div>
