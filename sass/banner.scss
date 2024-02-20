@@ -2,13 +2,40 @@
     // min-height: auto;
     // min-height: 80vh;
     background: #e5e5e5;
-    .title {
+
+    .all {
         position: absolute;
         left: 50%;
-        top: 30%;
+        top: 50%;
+        display: block;
+        // width: ;
         transform: translate(-50%,-50%);
         @media screen and (max-width:768px) {
             width: 100%;
+        }
+        .img {
+            width: 200px;
+            height: auto;
+            vertical-align: bottom;
+            display: inline-block;
+            @media screen and (max-width:768px) {
+                width: 32%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%,-50%);
+        @media screen and (max-width:768px) {
+            width: 100%;
+            top: 25%;
         }
         h2 {
             font-family: 'Protest Riot', sans-serif;
@@ -18,7 +45,7 @@
             text-align: center;
             text-shadow: 5px 5px white;
             @media screen and (max-width:768px) {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
                 line-height: 2.2rem;
                 text-shadow: 2px 2px white;
             }
