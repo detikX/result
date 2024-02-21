@@ -1,6 +1,10 @@
 .komik {
     background: #f6e34e;
     border-top: 3px solid black;
+    .hello {
+        border: 2px solid;
+        border-radius: 0px;
+    }
 
     .bintang {
         position: absolute;
