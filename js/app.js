@@ -82,8 +82,10 @@
 $('.gallery__link').click(function () {
     var buttonId = $(this).attr('id');
     var name = $(this).attr('data-id')
-    $('#modal-container').removeAttr('class').addClass(buttonId);
-    $("#modal-container").children().children().children().children('.nama-paslon').text(name)
+    // alert(1)
+    $(this).parent().parent().parent().parent().parent().children('#modal-container').removeAttr('class').addClass(buttonId);
+    // $('#modal-container').removeAttr('class').addClass(buttonId);
+    // $("#modal-container").children().children().children().children('.nama-paslon').text(name)
     $(".dalang").append()
     $('body').addClass('modal-active');
 })
