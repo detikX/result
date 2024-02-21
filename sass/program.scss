@@ -1,4 +1,8 @@
 .program {
+    border-top: 3px solid;
+    .hello {
+        background: white;
+    }
     .bgx {
         position: absolute;
         inset: 0;
@@ -16,6 +20,10 @@
         width: fit-content;
         height: 320px;
         margin: 0 auto;
+        @media screen and (max-width:768px) {
+            height: fit-content;
+            margin: 0 auto 16px;
+        }
         .judul {
             position: absolute;
             left: 50%;
@@ -63,6 +71,65 @@
         }
     }
 
+    .realcountx {
+        position: absolute;
+        right: 7%;
+        display: none;
+        width: 65px;
+        z-index: 2;
+        bottom: 3%;
+        /* transform: rotate(-35deg); */
+        background: #418505;
+        font-size: .7rem;
+        color: white;
+        /* font-weight: bold; */
+        text-align: center;
+        @media screen and (max-width:768px) {
+            right: 20%;
+            bottom: -12%;
+        }
+    }
+
+    .absol {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        padding: 8px;
+        background: #fff;
+        /* right: 0; */
+        width: 50%;
+        transform: translate(-50%,0%);
+        text-align: center;
+        @media screen and (max-width:768px) {
+            transform: initial;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 8px;
+            background: white;
+        }
+        .nilainya {
+            width: fit-content;
+            margin: 0 auto;
+            line-height: 1rem;
+            font-weight: bold;
+            font-size: 1.3rem;
+            &::after {
+                content: "%";
+            }
+        }
+        .ju {
+            position: absolute;
+            top: -20px;
+            font-weight: bold;
+            left: 0;
+        }
+
+        span {
+            font-size: .8rem;
+        }
+    }
     .datax {
         display: inline-block;
         width: 50%;
@@ -73,16 +140,7 @@
             border: 2px solid;
             transform: skew(-2deg, -2deg);
             position: relative;
-            .ju {
-                position: absolute;
-                top: -20px;
-                font-weight: bold;
-                left: 0;
-            }
-
-            span {
-                font-size: .8rem;
-            }
+            
         }
         @media screen and (max-width:768px) {
             width: 56%;
@@ -93,15 +151,7 @@
                 padding: 0 16px;
             }
         }
-        .nilainya {
-            font-size: 2rem;
-            font-weight: bold;
-            // border-bottom: 1px solid;
-            margin-bottom: 4px;
-            &::after {
-                content: "%";
-            }
-        }
+     
         h4 {
             font-size: 2rem;
             // font-weight: 700;

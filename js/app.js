@@ -150,6 +150,11 @@ $.ajax({
 
         $("#pra-per").text(persenPrab.toFixed(2))
         $("#pra-jum").text(prabowo.toLocaleString('id-ID'))
+
+        $("#gan-per").text(persenGanj.toFixed(2))
+        $("#gan-jum").text(ganjar.toLocaleString('id-ID'))
+        $("#harinya").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
+        $("#jamnya").text(`${sliceDate} WIB`)
         $(".realcount").append(
             `   
                 <div class="text-center datasx">
