@@ -214,41 +214,19 @@
                     </div>
                     <div class="gallery">
                         <div class="gallery__column">
-                            <div id="modal-container">
-                                <div class="modal-background">
-                                    <div class="modal">
-                                        <div class="popup-atasx">
-                                            <h2 class="nama-paslon">NAMA PASLON</h2>
-                                        </div>
-                                        <div id="closex">
-                                            <i class="fa fa-chevron-left"></i>
-                                            Kembali
-                                        </div>
-                                        <div class="dalang">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem perferendis dolorem. Et doloribus, nobis voluptatibus expedita quis ipsum doloremque eaque nam quisquam odio a quas totam dolorem illum blanditiis.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda, vel voluptatum recusandae magnam neque. Laudantium suscipit, eveniet sint recusandae optio dolores, soluta vitae tempora saepe nemo, corporis maxime fuga.</p>
-                                            <div class="images">
-                                                <img src="https://awsimages.detik.net.id/community/media/visual/2023/02/12/ilustrasi-bilik-suara-di-tps-pemilu_169.jpeg?w=1080" alt="">
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem perferendis dolorem. Et doloribus, nobis voluptatibus expedita quis ipsum doloremque eaque nam quisquam odio a quas totam dolorem illum blanditiis..</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem perferendis dolorem. Et doloribus, nobis voluptatibus expedita quis ipsum doloremque eaque nam quisquam odio a quas totam dolorem illum blanditiis..</p>
-                                        </div>
-                                        <div class="popup-bawahx"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="one" class="gallery__link">
+                            <div id="one" class="gallery__link" data-id="Anies Baswedan">
                                 <figure class="gallery__thumb gallery__thumb--odd">
                                     <img src="img/paslon1-1.jpeg" alt="Anies Baswedan di Lebak Bulus" class="gallery__image">
                                     <figcaption class="gallery__caption">Anies Baswedan di Lebak Bulus</figcaption>
                                 </figure>
                             </div>
-                            <div id="one" class="gallery__link">
+                            <div id="one" class="gallery__link" data-id="Prabowo Subianto">
                                 <figure class="gallery__thumb gallery__thumb--odd">
                                     <img src="https://akcdn.detik.net.id/community/media/visual/2024/02/14/salam-dua-jari-prabowo-usai-mencoblos-4.jpeg?w=1080" alt="Prabowo di Bogor" class="gallery__image">
                                     <figcaption class="gallery__caption">Prabowo di Bogor</figcaption>
                                 </figure>
                             </div>
-                            <div id="one" class="gallery__link">
+                            <div id="one" class="gallery__link" data-id="Ganjar Pranowo">
                                 <figure class="gallery__thumb gallery__thumb--even">
                                     <img src="https://akcdn.detik.net.id/community/media/visual/2024/02/14/semringah-ganjar-nyoblos-di-tps-11-gajahmungkur-semarang-1.jpeg?w=1080" alt="Ganjar di Semarang" class="gallery__image">
                                     <figcaption class="gallery__caption">Ganjar di Semarang</figcaption>
@@ -256,19 +234,19 @@
                             </div>
                         </div>
                         <div class="gallery__column">
-                            <div id="one" class="gallery__link">
+                            <div id="one" class="gallery__link" data-id="Muhaimin Iskandar">
                                 <figure class="gallery__thumb gallery__thumb--even">
                                     <img src="https://akcdn.detik.net.id/community/media/visual/2024/02/14/momen-cak-imin-nyoblos-bareng-istri-dan-anak-4.jpeg?w=1080" alt="Muhaimin di Kemang" class="gallery__image">
                                     <figcaption class="gallery__caption">Muhaimin di Kemang</figcaption>
                                 </figure>
                             </div>
-                            <div id="one" class="gallery__link">
+                            <div id="one" class="gallery__link" data-id="Gibran Rakabuming Raka">
                                 <figure class="gallery__thumb gallery__thumb--odd">
                                     <img src="https://akcdn.detik.net.id/community/media/visual/2024/02/14/cawapres-nomor-urut-02-gibran-rakabuming-raka-dan-istrinya-selvi-ananda-saat-mencoblos-di-tps-34-manahan-kota-solo-rabu-142202-2.jpeg?w=1080" alt="Gibran di Solo" class="gallery__image">
                                     <figcaption class="gallery__caption">Gibran di Solo</figcaption>
                                 </figure>
                             </div>
-                            <div id="one" class="gallery__link">
+                            <div id="one" class="gallery__link" data-id="Mahfud Md">
                                 <figure class="gallery__thumb gallery__thumb--odd">
                                     <img src="https://akcdn.detik.net.id/community/media/visual/2024/02/14/cawapres-nomor-urut-03-mahfud-md-mencoblos-di-tps-106-sambilegi-lor-maguwoharjo-depok-kabupaten-sleman-diy-rabu-1422024-pagi-1.jpeg?w=1080" alt="Mahfud Md di Yogya" class="gallery__image">
                                     <figcaption class="gallery__caption">Mahfud Md di Yogya</figcaption>
@@ -445,13 +423,28 @@
                     </div> -->
                 </div>
             </section>
-            <!-- Indikator
-LSI Denny JA
-Charta Politika
-Poltracking
-PRC
-SMRC
-Litbang Kompas -->
+            <div id="modal-container">
+                <div class="modal-background">
+                    <div class="modal">
+                        <div class="popup-atasx">
+                            <h2 class="nama-paslon"></h2>
+                        </div>
+                        <div id="closex">
+                            <i class="fa fa-chevron-left"></i>
+                            Kembali
+                        </div>
+                        <div class="dalang">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem perferendis dolorem. Et doloribus, nobis voluptatibus expedita quis ipsum doloremque eaque nam quisquam odio a quas totam dolorem illum blanditiis.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda, vel voluptatum recusandae magnam neque. Laudantium suscipit, eveniet sint recusandae optio dolores, soluta vitae tempora saepe nemo, corporis maxime fuga.</p>
+                            <div class="images">
+                                <img src="https://awsimages.detik.net.id/community/media/visual/2023/02/12/ilustrasi-bilik-suara-di-tps-pemilu_169.jpeg?w=1080" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem perferendis dolorem. Et doloribus, nobis voluptatibus expedita quis ipsum doloremque eaque nam quisquam odio a quas totam dolorem illum blanditiis..</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem perferendis dolorem. Et doloribus, nobis voluptatibus expedita quis ipsum doloremque eaque nam quisquam odio a quas totam dolorem illum blanditiis..</p>
+                        </div>
+                        <div class="popup-bawahx"></div>
+                    </div>
+                </div>
+            </div>
             <!-- https://apexcharts.com/javascript-chart-demos/bar-charts/grouped-stacked-bars/ -->
         </main>
         <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->

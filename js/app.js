@@ -81,7 +81,9 @@
 
 $('.gallery__link').click(function () {
     var buttonId = $(this).attr('id');
+    var name = $(this).attr('data-id')
     $('#modal-container').removeAttr('class').addClass(buttonId);
+    $("#modal-container").children().children().children().children('.nama-paslon').text(name)
     $(".dalang").append()
     $('body').addClass('modal-active');
 })
