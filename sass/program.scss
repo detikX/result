@@ -67,10 +67,23 @@
         display: inline-block;
         width: 50%;
         vertical-align: middle;
-        background: white;
-        padding: 4px 8px;
-        border: 2px solid;
-        transform: skew(-2deg, -2deg);
+        &-prog {
+            background: white;
+            padding: 4px 8px;
+            border: 2px solid;
+            transform: skew(-2deg, -2deg);
+            position: relative;
+            .ju {
+                position: absolute;
+                top: -20px;
+                font-weight: bold;
+                left: 0;
+            }
+
+            span {
+                font-size: .8rem;
+            }
+        }
         @media screen and (max-width:768px) {
             width: 56%;
         }
@@ -80,8 +93,17 @@
                 padding: 0 16px;
             }
         }
+        .nilainya {
+            font-size: 2rem;
+            font-weight: bold;
+            // border-bottom: 1px solid;
+            margin-bottom: 4px;
+            &::after {
+                content: "%";
+            }
+        }
         h4 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             // font-weight: 700;
             font-family: 'Protest Riot' !important;
             @media screen and (max-width:768px) {

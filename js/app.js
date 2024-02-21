@@ -145,7 +145,11 @@ $.ajax({
         }
 
 
+        $("#anies-per").text(persenAnies.toFixed(2))
+        $("#anies-jum").text(anies.toLocaleString('id-ID'))
 
+        $("#pra-per").text(persenPrab.toFixed(2))
+        $("#pra-jum").text(prabowo.toLocaleString('id-ID'))
         $(".realcount").append(
             `   
                 <div class="text-center datasx">
