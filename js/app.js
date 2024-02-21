@@ -85,7 +85,7 @@ $('.gallery__link').click(function () {
     // alert(1)
     $(this).parent().parent().parent().parent().parent().children('#modal-container').removeAttr('class').addClass(buttonId);
     // $('#modal-container').removeAttr('class').addClass(buttonId);
-    // $("#modal-container").children().children().children().children('.nama-paslon').text(name)
+    $(this).parent().parent().parent().parent().parent().children('#modal-container').children().children().children().children('.nama-paslon').text(name)
     $(".dalang").append()
     $('body').addClass('modal-active');
 })
