@@ -62,9 +62,20 @@
         }
     }
 
+
+    @keyframes petir1 {
+        0%, 100% {
+          bottom: 16px;
+        }
+        50% {
+          bottom: 24px;
+        }
+      }
+
     .petir-bawah {
         position: absolute;
         left: 16px;
+        // animation: petir1 1s linear infinite;
         bottom: 16px;
         width: fit-content;
         height: 150px;
